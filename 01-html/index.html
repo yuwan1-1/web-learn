@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 这一行告诉浏览器：这是 HTML5 文档（最新标准），必须写在第一行 -->
+
+<html lang="zh-CN">
+<!-- <html> 是整个网页的"根"，lang="zh-CN" 表示网页内容是中文 -->
+
+<head>
+  <!-- <head> 是"头部"，放网页的设置信息，用户在页面上看不到这些 -->
+
+  <meta charset="UTF-8">
+  <!-- 设置字符编码为 UTF-8，这样中文才不会乱码（很重要，别删） -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 让网页在手机上也能正常显示 -->
+
+  <title>我的自我介绍 · 栩源</title>
+  <!-- <title> 是浏览器标签页顶部显示的那行小字 -->
+
+  <link rel="stylesheet" href="style.css">
+  <!-- 这一行把 CSS 样式文件"接"进来：href 指向同目录下的 style.css -->
+</head>
+
+<body>
+  <!-- <body> 是"身体"，用户在网页上能看到的一切都写在这里 -->
+
+  <h1>你好，我是栩源 👋</h1>
+  <!-- <h1>~<h6> 是标题，数字越小字越大，h1 最大（一般一页只用一次） -->
+
+  <p>我是上海师范大学天华学院 <strong>人工智能专业</strong> 的大一新生，
+     正在学 <em>网页开发</em>，这是我做的第一个网页！</p>
+  <!-- <p> 是段落；<strong> 加粗；<em> 斜体 -->
+
+  <h2>我的基本信息</h2>
+  <!-- <h2> 是二级标题，比 h1 小一级 -->
+
+  <ul>
+    <li>班级：26人工智能2班</li>
+    <li>职务：团支书</li>
+    <li>正在学：HTML、CSS、JavaScript</li>
+  </ul>
+  <!-- <ul> 是无序列表（前面带圆点）；<li> 是列表里的每一项 -->
+
+  <h2>我的爱好</h2>
+  <ol>
+    <li>打篮球</li>
+    <li>看电影</li>
+    <li>折腾电脑</li>
+    <li>听音乐</li>
+  </ol>
+  <!-- <ol> 是有序列表（前面带数字 1. 2. 3.） -->
+
+  <h2>我的链接</h2>
+  <p>我的 GitHub：
+    <a href="https://github.com/yuwan1-1" target="_blank">点这里访问</a>
+  </p>
+  <!-- <a> 是超链接；href=跳转地址；target="_blank" 表示在新标签页打开 -->
+
+  <h2>一张图片</h2>
+  <img src="https://picsum.photos/300/200" alt="示例图片" width="300">
+  <!-- <img> 是图片；src=图片地址；alt=加载失败时显示的文字；width=宽度 -->
+
+  <h2>玩一下（JavaScript）</h2>
+  <button id="changeColor">点我换个背景色</button>
+  <button id="showTime">现在几点？</button>
+  <!-- <button> 是按钮；id 是它的"名字"，JS 靠这个 id 找到它 -->
+
+  <hr>
+  <!-- <hr> 是一条水平分隔线 -->
+
+  <p><small>© 2026栩源 · 用 HTML 做的第一个网页</small></p>
+  <!-- <small> 是"小字"；© 是版权符号 -->
+
+  <script src="script.js"></script>
+  <!-- 把 JS 文件接进来；放在 </body> 前面，等网页加载完再执行 -->
+</body>
+</html>
